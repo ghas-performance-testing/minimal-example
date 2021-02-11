@@ -35,6 +35,10 @@ public class ExposedServlet extends HttpServlet {
 
 		// BAD: typical XSS, this time written to an OutputStream instead of a Writer 
 		response.getOutputStream().write(request.getPathInfo().getBytes());
+
+		// BAD: typical XSS, this time written to an OutputStream instead of a Writer 
+		response.getOutputStream().write(request.getPathInfo().getBytes());
+
 	}
 	
 
